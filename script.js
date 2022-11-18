@@ -18,3 +18,12 @@ function seleccionar() {
 window.onscroll = function () {
   efectoHabilidades();
 };
+
+function descargarCv() {
+  console.log("descarando");
+  var anchor = document.createElement("a");
+  anchor.href = "./Curriculom/Curriculom.pdf";
+  anchor.target = "_blank";
+  anchor.download = "Curriculom_Alexander_Say.pdf";
+  anchor.click();
+}
