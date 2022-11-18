@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Alexander</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li>
+              <a href="#habilidades" onclick="seleccionar()">HABILIDADES</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/foto.jpg" alt="" />
+        </div>
+        <h1>Alexander Say</h1>
+        <h2>Programador JR</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/alex.say.3323" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          Soy desarrollaor, tecnico en sistemas y estudiante de la carrega de
+          ingeniera en sistemas. Estoy aprendiento cosas nuevas todos los dias y
+          disfurto crear proyectos y verlos funcionar.
+        </p>
+        <h3>Intereses</h3>
+
+    <div class="fila">
+    
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-computer"></i>
+                <span>TECNOLOGIA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-school"></i>
+                <span>APRENDER</span>
+              </div>
+      
+          </div>
+        </div>
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+    <section class="skills " id="habilidades">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+       
+   <div class="fila">
+            <div class="contenedor-intereses">
+                <div class="interes">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GITHUB</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-java"></i>
+                  <span>JAVA</span>
+                </div>
+                <div class="interes">
+                    <i class="fa-solid fa-power-off"></i>
+                    <span>SPRING BOOT</span>
+                  </div>
+                <div class="interes">
+                  <i class="fa-brands fa-css3"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-react"></i>
+                  <span>REACT</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-square-js"></i>
+                  <span>JAVA SCRIPT</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-php"></i>
+                  <span>PHP</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-npm"></i>
+                  <span>NPM</span>
+                </div>
+       
+        </div>
+   
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+         
+          <div class="proyecto">
+            <img src="img/helpdesk.png"  style="background-color: white;"/>
+            <div class="overlay">
+                <h4>Administrador</h4>
+                <div class="fila">
+                    <div class="col">User/pass: </div>
+                    <div class="col">admin</div>
+                  </div>
+               
+                  <h4>Usuario</h4>
+                  <div class="fila">
+                      <div class="col">User/pass: </div>
+                      <div class="col">user</div>
+                    </div>
+                  
+         <div class="redes">
+                <a href="https://tickets.herokuapp.com/index.php" target="_blank"
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/OurAlekey/tickets/tree/main" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h4>helpdesk</h4>
+       
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <div class="col">
+                <ul>
+               
+                    <li>
+                        <strong>Teléfono</strong>
+                        502 37173414
+                    </li>
+                   
+                    <li>
+                        <strong>Dirección</strong>
+                    Sololá, Sololá, Guatemala
+                    </li>
+                  
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+              
+                    <li>
+                        <strong>Email</strong>
+                        sayalex35@gmail.com
+                    </li>
+                  
+                    <li>
+                        <strong>Cargo</strong>
+                        <span>Programdor Jr</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/alex.say.3323" target="_blank"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
